@@ -12,8 +12,8 @@ public class Shop {
 
         System.out.println(p1.getId()+" "+p1.getName()+" "+p1.getPrice()+" "+p1.getDiscount());
 
-        Condition condicao = Condition.COLD;
+        Rating rating = Rating.NOT_RATED;
 
-        System.out.println("Cuidado recomendado: " + condicao.getCaution());
+        System.out.println("estrelas: " + rating.getStars());
     }
 }
