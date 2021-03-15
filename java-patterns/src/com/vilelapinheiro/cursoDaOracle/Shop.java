@@ -15,5 +15,17 @@ public class Shop {
         Rating rating = Rating.NOT_RATED;
 
         System.out.println("estrelas: " + rating.getStars());
+
+        Object p2 = null;
+        try {
+            p2 = p1.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(p1.hashCode());
+        if (p2 != null) {
+            System.out.println(p2.hashCode());
+        }
     }
 }
